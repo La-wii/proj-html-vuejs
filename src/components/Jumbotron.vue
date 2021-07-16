@@ -42,7 +42,7 @@
             </div>
             <!-- end row -->
 
-            <div class="row pb-2">
+            <div class="row pb-5">
                 <div class="col-2">
                     <img src="/img/client-logo-01.png" alt="logo stylus" class="ps-4 pt-1">
                 </div>
