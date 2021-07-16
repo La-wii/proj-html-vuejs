@@ -112,14 +112,6 @@ export default {
                             li{
                                 display: inline-block;
                                 list-style: none;
-                                a{
-                                    text-decoration: none;
-                                    // margin: 0 10px;
-                                    color: #0b0b0b;
-                                        &:hover{
-                                            color: #20AD96;
-                                        }
-                                }
                             }
                         }
                         .icon{
