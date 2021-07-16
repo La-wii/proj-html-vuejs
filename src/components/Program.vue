@@ -97,13 +97,6 @@ export default {
                 .card{
                     width: calc(100% / 3);
                     margin: 30px;
-                    a{
-                        text-decoration: none;
-                        color: #0b0b0b;
-                            &:hover{
-                                color: #20AD96;
-                            }
-                    }
                 }
             }
         }
