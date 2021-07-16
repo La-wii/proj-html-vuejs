@@ -12,6 +12,7 @@
                 </div>
                 <!-- end logo -->
 
+                <!-- start link -->
                 <div class="col-7 d-inline-flex py-2">
                     <ul>
                         <li v-for="(link, index) in link" :key="index"> 
@@ -23,7 +24,8 @@
                         <i class="far fa-user-circle"></i>
                     </div>
                 </div>
-
+                <!-- end link -->
+                
                 <!-- start input -->
                 <div class="col-3 d-inline-flex">
 
@@ -49,6 +51,7 @@
     </nav>
 
 </header>
+
 </template>
 
 <script>
