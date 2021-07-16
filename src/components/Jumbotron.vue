@@ -34,9 +34,9 @@
                 <div class="col-6 py-5">
                     <img src="/img/jumbo-img.jpg" alt="" class="rounded-circle">
 
-                    <!-- <img src="pallini-grigi.png" alt=""> -->
+                    <!-- <img src="/img/pallini-grigi.png" alt=""> -->
 
-                    <!-- <img src="pallini-verdi.png" alt=""> -->
+                    <!-- <img src="/img/pallini-verdi.png" alt=""> -->
                 </div>
                 <!-- end img section -->
             </div>
