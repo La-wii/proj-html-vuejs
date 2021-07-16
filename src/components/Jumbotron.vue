@@ -101,12 +101,12 @@ export default {
                     }
                 }
                 // start img
-                .col-6{
-                    img{
+                // .col-6{
+                //     img{
 
-                    }
+                //     }
 
-                }
+                // }
             }
             // end row
         }
