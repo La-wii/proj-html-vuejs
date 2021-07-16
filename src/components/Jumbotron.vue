@@ -23,7 +23,7 @@
 
                     <p class="my-3">
                         Have questions?
-                        <a href="#">Get Free Sample
+                        <a href="#" class="green">Get Free Sample
                             <i class="fas fa-arrow-right"></i>
                         </a>
                     </p>
@@ -95,7 +95,7 @@ export default {
                         border-radius: 7px;    
                     }
                     p{
-                        a{
+                        .green{
                             color: #25ab94;
                         }
                     }
