@@ -2,6 +2,7 @@
   <div id="app">
     <Header/>
     <Jumbotron/>
+    <Footer/>
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
   </div>
@@ -11,11 +12,13 @@
 // import HelloWorld from "./components/HelloWorld.vue";
 import Header from "@/components/Header.vue";  
 import Jumbotron from './components/Jumbotron.vue';
+import Footer from './components/Footer.vue';
 export default {
   name: "App",
   components: {
     Header,
     Jumbotron,
+    Footer,
   },
 };
 </script>
