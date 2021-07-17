@@ -27,7 +27,7 @@
 
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">{{corso.prezzo}}</h5>
+                  <h5 class="card-title green-text">{{corso.costo}}</h5>
                   <p class="card-text">{{corso.descrizione}}</p>
                   <span class="card-text">
                     <small class="text-muted pe-5">
@@ -139,6 +139,9 @@ export default {
                 height: 150px;
                 width: 150px;
                 border-radius: 50%;
+              }
+              .green-text{
+                color:#20AD96;
               }
             }
         }
