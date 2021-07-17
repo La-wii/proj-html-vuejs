@@ -50,6 +50,15 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="col-12 text-center">
+          <button class="btn-green">
+            View all courses 
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
     </div>
     <!-- start container -->
   </div>
