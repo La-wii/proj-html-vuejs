@@ -31,12 +31,14 @@
                 <!-- end text section -->
 
                 <!-- start img section -->
-                <div class="col-6 py-5">
+                <div class="col-6 py-5 position-relative">
                     <img src="/img/jumbo-img.jpg" alt="" class="rounded-circle">
 
-                    <!-- <img src="/img/pallini-grigi.png" alt=""> -->
+                    <img src="/img/pallini-grigi.png" alt="pallini" class="gr-dot">
 
-                    <!-- <img src="/img/pallini-verdi.png" alt=""> -->
+                    <img src="/img/pallini-verdi.png" alt="pallini verdi sfondo" class="green-dot">
+
+                    <img src="/img/cerchio.png" alt="pallini verdi sfondo" class="circle">
                 </div>
                 <!-- end img section -->
             </div>
@@ -94,12 +96,30 @@ export default {
                     }
                 }
                 // start img
-                // .col-6{
-                //     img{
+                .col-6{
+                    .gr-dot{
+                        width: 250px;
+                        position: absolute;
+                        left: -5%;
+                        bottom: 50%;
+                        z-index: -10;
+                    }
+                    .green-dot{
+                        width: 200px;
+                        position: absolute;
+                        left: 60%;
+                        bottom: 10%;
+                        z-index: -10;
 
-                //     }
+                    }
+                    .circle{
+                        position: absolute;
+                        left: 80%;
+                        bottom: 50%;
+                        z-index: 10;
+                    }
 
-                // }
+                }
             }
             // end row
         }
