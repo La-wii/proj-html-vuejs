@@ -1,54 +1,50 @@
 <template>
   <!-- start corsi -->
   <div class="corsi">
-
+    <!-- start container -->
     <div class="container-lg">
 
-      <div class="row flex-wrap">
-
+      <div class="row">
         <div class="col-6">
 
-          <div class="card mb-3">
-
-            <div class="row g-0">
-
-              <div class="col-md-4 corso-img pt-3">
-                <img src="/img/corso-1.jpg" class="img-fluid rounded-circle" alt="...">
-              </div>
-
-              <!-- start col -->
-              <div class="col-md-8">
-
+          <div class="card mb-3" v-for="(corso, index) in corsi" :key="index">
+              <div class="row g-0">
+                <div>
+                    <img :src="corso.img" class="img-fluid rounded-start" alt="...">
+                </div>
+              
+              <div>
+                  
                 <div class="card-body">
-                  <h5 class="card-title">Price</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-title">{{corso.prezzo}}</h5>
+                  <p class="card-text">{{corso.descrizione}}</p>
+
                   <span class="card-text">
                     <small class="text-muted pe-5">
                       <i class="far fa-file"></i>
-                      Lessons
+                      {{corso.lezioni}}Lessons
                     </small>
 
                     <small class="text-muted">
                       <i class="far fa-user"></i>
-                      Students
+                      {{corso.studenti}}
                     </small>
                   </span>
-                </div>
+                </div> 
 
               </div>
-              <!-- end col -->
+
             </div>
+          </div>   
 
-          </div>
-
-        </div>
+        </div> 
 
       </div>
 
     </div>
 
   </div>
-  <!-- end corsi -->
+    <!-- end corsi -->
 </template>
 
 <script>
@@ -86,7 +82,7 @@ export default {
           studenti: '62'
         },
         {
-          img: '/img/corso-5.jpg',
+          img: '/img/corso-6.jpg',
           costo:'$26,00',
           descrizione: 'Academic Listening and Note-taking',
           lezioni: '14',
@@ -107,9 +103,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    // .card{
-    //   .card-img{
+    .card{
+      width: calc(100% / 2);
+      // margin: 10px;
+      // .card-img{
         
-    //   }
-    // }
+      // }
+    }
 </style>
