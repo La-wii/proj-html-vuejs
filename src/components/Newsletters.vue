@@ -42,7 +42,7 @@
                     >
 
                     <button type="submit" 
-                    class="ms-2 px-2">Subscribe</button>        
+                    class="ms-2 px-2 btn-green">Subscribe</button>        
                 </div>
                 <!-- end col -->
 
@@ -93,12 +93,6 @@ export default {
             .row{
                 input{
                     height: 60px;
-                }
-                button{
-                    background-color: #20AD96;
-                    color: white;
-                    padding: 10px 20px;
-                    border: none;
                 }
             }
         }
