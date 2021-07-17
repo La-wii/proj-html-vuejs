@@ -2,7 +2,7 @@
     <div class="box">
 
         <div class="container-lg">
-            <div class="row">
+            <div class="row py-5">
                 <div class="col-4" v-for="(testimonial, index) in testimonials" :key="index">
                     <div class="card">
                         <div class="card-body">
@@ -60,7 +60,8 @@ export default {
 
 <style scoped lang="scss">
     .box{
-        height: 800px;
+        background-color: #f6f3f5;
+        // height: 800px;
         .container-lg{
             .row{
                 .col-4{

@@ -1,8 +1,18 @@
 <template>
   <!-- start corsi -->
-  <div class="corsi">
+  <div class="corsi py-5">
     <!-- start container -->
     <div class="container-lg">
+      <div class="row">
+        <div class="col-12 text-center pb-5">
+          <p>STIMULATED TO LEARN?</p>
+          <h2 class="display-6">
+            <strong>
+                Featured Online Courses
+            </strong>
+            </h2>
+        </div>
+      </div>
 
       <div class="row">
         <div class="col-6" v-for="(corso, index) in corsi" :key="index">
@@ -11,7 +21,7 @@
 
             <div class="row g-0">
 
-              <div class="col-md-4">
+              <div class="col-md-4 pt-2">
                 <img :src="corso.img" class="img-fluid rounded-circle" alt="immagini">
               </div>
 
@@ -108,11 +118,33 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    .card{
-      width: calc(100% / 2);
-      // margin: 10px;
-      // .card-img{
-        
-      // }
-    }
+  .corsi{
+    background-color: #f6f3f5;
+      .container-lg{
+        .row{
+          .col-12{
+            p{
+              color: #9ea4a5;
+            }
+          }
+        }
+        .row{
+          .card{
+            height: 150px;
+            width: calc(100% / 2);
+            // margin: 10px;
+            background-color: transparent;
+            border: none;
+              .card-img{
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+              }
+            }
+        }
+      }
+  }
+    
+
+    
 </style>
