@@ -5,6 +5,7 @@
     <Courses/>
     <Program/>
     <Youtube/>
+    <Carousel/>
     <Cta/>
     <Newsletters/>
     <Footer/>
@@ -20,6 +21,7 @@ import Jumbotron from './components/Jumbotron.vue';
 import Courses from './components/Courses.vue';
 import Program from './components/Program.vue';
 import Youtube from './components/Youtube.vue';
+import Carousel from './components/Carousel.vue';
 import Cta from './components/Cta.vue';
 import Newsletters from './components/Newsletters.vue';
 import Footer from './components/Footer.vue';
@@ -31,6 +33,7 @@ export default {
     Courses,
     Program,
     Youtube,
+    Carousel,
     Cta,
     Newsletters,
     Footer,
