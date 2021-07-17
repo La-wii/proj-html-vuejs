@@ -5,6 +5,7 @@
     <Courses/>
     <Program/>
     <Youtube/>
+    <Newsletters/>
     <Footer/>
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
@@ -18,6 +19,7 @@ import Jumbotron from './components/Jumbotron.vue';
 import Courses from './components/Courses.vue';
 import Program from './components/Program.vue';
 import Youtube from './components/Youtube.vue';
+import Newsletters from './components/Newsletters.vue';
 import Footer from './components/Footer.vue';
 export default {
   name: "App",
@@ -27,6 +29,7 @@ export default {
     Courses,
     Program,
     Youtube,
+    Newsletters,
     Footer,
   },
 };
