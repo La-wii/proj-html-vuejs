@@ -5,6 +5,7 @@
     <Courses/>
     <Program/>
     <Youtube/>
+    <Cta/>
     <Newsletters/>
     <Footer/>
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
@@ -19,6 +20,7 @@ import Jumbotron from './components/Jumbotron.vue';
 import Courses from './components/Courses.vue';
 import Program from './components/Program.vue';
 import Youtube from './components/Youtube.vue';
+import Cta from './components/Cta.vue';
 import Newsletters from './components/Newsletters.vue';
 import Footer from './components/Footer.vue';
 export default {
@@ -29,6 +31,7 @@ export default {
     Courses,
     Program,
     Youtube,
+    Cta,
     Newsletters,
     Footer,
   },
