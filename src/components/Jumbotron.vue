@@ -16,7 +16,7 @@
                         Learning is a life-long journey that in fact we never find the terminate stop. Stop searching, enjoy the process.
                     </p>
 
-                    <button class="my-3 border-white">
+                    <button class="my-3 btn-green">
                         <i class="fas fa-download px-1"></i>
                         Download free guide
                     </button>
@@ -86,13 +86,6 @@ export default {
                     p{
                         color: #9ea4a5;
                         font-size: 22px;
-                    }
-                    button{
-                        background-color: #25ab94;
-                        color: white;
-                        padding: 10px 20px;
-                        font-size: 18px;
-                        border-radius: 7px;    
                     }
                     p{
                         .green{
