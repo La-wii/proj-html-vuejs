@@ -31,13 +31,12 @@
 
                     <input type="text" 
                         class="form-control" 
-                        placeholder="Scegli un titolo"
+                        placeholder="Search"
                         v-model.trim="inputText"
                     >
 
                     <button type="submit" 
                     class="ms-2 px-2"
-                    @click.prevent="$emit('search',inputText)"
                     >
                         <i class="fas fa-search lente"></i>
                     </button>               
