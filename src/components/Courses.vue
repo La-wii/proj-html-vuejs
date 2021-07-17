@@ -22,7 +22,7 @@
                   <span class="card-text">
                     <small class="text-muted pe-5">
                       <i class="far fa-file"></i>
-                      {{corso.lezioni}}Lessons
+                      {{corso.lezioni}} Lessons
                     </small>
 
                     <small class="text-muted">
