@@ -3,16 +3,16 @@
         <div class="container-lg">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active btn-slider" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-info" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="bg-dark"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="bg-dark"></button>
                 </div>
-            <div class="carousel-inner">
+                <div class="carousel-inner">
                     <div class="carousel-item active">
                         <!-- <img src="..." class="d-block w-100" alt="..."> -->
                         <div class="row py-5">
                             <div class="col-4" v-for="(testimonial, index) in testimonials" :key="index">
-                                <div class="card d-block w-100">
+                                <div class="card w-100">
                                     <div class="card-body">
                                         <h5 class="card-title">{{testimonial.title}}</h5>
                                         <p class="card-text">{{testimonial.text}}</p>
@@ -29,11 +29,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item bg-info">
                         <!-- <img src="..." class="d-block w-100" alt="..."> -->
                         <div class="row py-5">
                             <div class="col-4" v-for="(testimonial, index) in testimonials" :key="index">
-                                <div class="card d-block w-100 bg-info" style="width: 18rem;">
+                                <div class="card w-100" style="width: 18rem;">
                                     <div class="card-body">
                                         <h5 class="card-title">{{testimonial.title}}</h5>
                                         <p class="card-text">{{testimonial.text}}</p>
@@ -50,11 +50,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item bg-dark">
                         <!-- <img src="..." class="d-block w-100" alt="..."> -->
                         <div class="row py-5">
                             <div class="col-4" v-for="(testimonial, index) in testimonials" :key="index">
-                                <div class="card d-block w-100 bg-dark">
+                                <div class="card w-100 bg-dark">
                                     <div class="card-body">
                                         <h5 class="card-title">{{testimonial.title}}</h5>
                                         <p class="card-text">{{testimonial.text}}</p>
@@ -72,13 +72,13 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev btn-slider" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <button class="carousel-control-prev bg-dark pre" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next btn-slider" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <button class="carousel-control-next bg-dark next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden text-dark">Next</span>
                 </button>
             </div>
         </div>
@@ -119,12 +119,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    .slider{
-        height: 800px;
-        .container-lg{
-            .btn-slider{
-                color: turquoise;
-            }
-        }
-    }
+    
 </style>
