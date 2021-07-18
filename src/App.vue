@@ -6,6 +6,7 @@
     <Program/>
     <Youtube/>
     <Carousel/>
+    <Slider/>
     <Cta/>
     <Count/>
     <Blog/>
@@ -24,6 +25,7 @@ import Courses from './components/Courses.vue';
 import Program from './components/Program.vue';
 import Youtube from './components/Youtube.vue';
 import Carousel from './components/Carousel.vue';
+import Slider from './components/Slider.vue';
 import Cta from './components/Cta.vue';
 import Count from './components/Count.vue';
 import Blog from './components/Blog.vue';
@@ -38,6 +40,7 @@ export default {
     Program,
     Youtube,
     Carousel,
+    Slider,
     Cta,
     Count,
     Blog,
