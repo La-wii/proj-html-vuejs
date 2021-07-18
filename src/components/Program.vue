@@ -97,6 +97,9 @@ export default {
                 .card{
                     width: calc(100% / 3);
                     margin: 30px;
+                    p{
+                        color: #9ea4a5;
+                    }
                 }
             }
         }
