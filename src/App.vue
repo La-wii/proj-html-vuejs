@@ -5,8 +5,7 @@
     <Courses/>
     <Program/>
     <Youtube/>
-    <Carousel/>
-    <Slider/>
+    <Slide/>
     <Cta/>
     <Count/>
     <Blog/>
@@ -24,8 +23,7 @@ import Jumbotron from './components/Jumbotron.vue';
 import Courses from './components/Courses.vue';
 import Program from './components/Program.vue';
 import Youtube from './components/Youtube.vue';
-import Carousel from './components/Carousel.vue';
-import Slider from './components/Slider.vue';
+import Slide from './components/Slide.vue';
 import Cta from './components/Cta.vue';
 import Count from './components/Count.vue';
 import Blog from './components/Blog.vue';
@@ -39,8 +37,7 @@ export default {
     Courses,
     Program,
     Youtube,
-    Carousel,
-    Slider,
+    Slide,
     Cta,
     Count,
     Blog,
