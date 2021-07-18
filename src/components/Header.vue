@@ -7,13 +7,13 @@
             <!-- start row -->
             <div class="row py-2">
                 <!-- start logo -->
-                <div class="col-2 py-1">
+                <div class="col-2 pt-3">
                     <img src="/img/dark-logo.png" alt="logo" class="logo">
                 </div>
                 <!-- end logo -->
 
                 <!-- start link -->
-                <div class="col-7 d-inline-flex pt-3">
+                <div class="col-7 d-inline-flex pt-4">
                     <ul>
                         <li v-for="(link, index) in link" :key="index"> 
                             <a :href="link.url" class="mx-3">{{link.text}}</a>
@@ -124,8 +124,8 @@ export default {
                 .row{
                     .col-2{
                         .logo{
-                            width: 180px;
-                            height: 45px;
+                            width: 150px;
+                            height: 35px;
                         }
                     }
                     .col-7{
