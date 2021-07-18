@@ -138,7 +138,7 @@ export default {
                                     //     li{
                                     //         display: block;
                                     //         display: none;
-                                    //             &:hover li{
+                                    //             li:hover{
                                     //             display: block;
                                     //             }
                                             
