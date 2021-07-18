@@ -13,10 +13,15 @@
                 <!-- end logo -->
 
                 <!-- start link -->
-                <div class="col-7 d-inline-flex py-2">
+                <div class="col-7 d-inline-flex pt-3">
                     <ul>
                         <li v-for="(link, index) in link" :key="index"> 
                             <a :href="link.url" class="mx-3">{{link.text}}</a>
+                            <!-- <ul>
+                                <li v-for="(page, index) in pages" :key="index" >
+                                    <a :href="page.url">{{page.text}}</a>
+                                </li>
+                            </ul> -->
                         </li>
                     </ul>
 
@@ -58,7 +63,7 @@ export default {
     name: "Header",
     data (){
     return {
-      link :[
+        link :[
         {
           text: 'Home',
           url:'#',
@@ -89,7 +94,24 @@ export default {
           url:'#',
           current: false
         }
-      ]
+        ],
+        pages:[
+        {
+          text: 'link 1',
+          url:'#',
+          current: false
+        },
+        {
+          text: 'link 2',
+          url:'#',
+          current: false
+        },
+        {
+          text: 'link 3',
+          url:'#',
+          current: false
+        }
+        ]
     }
   }
 }
@@ -102,8 +124,8 @@ export default {
                 .row{
                     .col-2{
                         .logo{
-                            width: 120px;
-                            height: 30px;
+                            width: 180px;
+                            height: 45px;
                         }
                     }
                     .col-7{
@@ -111,6 +133,17 @@ export default {
                             li{
                                 display: inline-block;
                                 list-style: none;
+                                font-size: 20px;
+                                    // ul{
+                                    //     li{
+                                    //         display: block;
+                                    //         display: none;
+                                    //             &:hover li{
+                                    //             display: block;
+                                    //             }
+                                            
+                                    //     }
+                                    // }
                             }
                         }
                         .icon{
