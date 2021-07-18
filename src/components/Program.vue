@@ -24,7 +24,7 @@
                     </div>
 
                     <div class="card" style="width: 22rem;">
-                        <img src="/img/custom.png" class="card-img-top" alt="...">
+                        <img src="/img/custom.png" class="card-img-top pb-4" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Customize Preferences</h5>
                             <p class="card-text">Learners are given the right to arrange and customize their study schedule and timetable based on preferences.</p>
@@ -36,7 +36,7 @@
                     </div>    
 
                     <div class="card" style="width: 22rem;">
-                        <img src="/img/cloud-storage.png" class="card-img-top" alt="...">
+                        <img src="/img/cloud-storage.png" class="card-img-top pb-4" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Cloud Storage</h5>
                             <p class="card-text">You can store online lessons via online cloud or download to your device and revise lessons on the way.
