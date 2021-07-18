@@ -139,7 +139,7 @@ export default {
         }
         .row{
           .card{
-            height: 150px;
+            height: 200px;
             width: calc(100% / 2);
             // margin: 10px;
             background-color: transparent;
@@ -147,7 +147,7 @@ export default {
               .card-img{
                 height: 150px;
                 width: 150px;
-                border-radius: 50%;
+                // border-radius: 50%;
               }
               .green-text{
                 color:#20AD96;
