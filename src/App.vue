@@ -8,6 +8,7 @@
     <Carousel/>
     <Cta/>
     <Count/>
+    <Blog/>
     <Newsletters/>
     <Footer/>
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
@@ -25,6 +26,7 @@ import Youtube from './components/Youtube.vue';
 import Carousel from './components/Carousel.vue';
 import Cta from './components/Cta.vue';
 import Count from './components/Count.vue';
+import Blog from './components/Blog.vue';
 import Newsletters from './components/Newsletters.vue';
 import Footer from './components/Footer.vue';
 export default {
@@ -38,6 +40,7 @@ export default {
     Carousel,
     Cta,
     Count,
+    Blog,
     Newsletters,
     Footer,
   },
