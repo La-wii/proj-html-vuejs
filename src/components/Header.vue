@@ -13,16 +13,19 @@
                 <!-- end logo -->
 
                 <!-- start link -->
-                <div class="col-7 d-inline-flex pt-4">
+                <div class="col-8 pt-4 d-inline-flex">
                     <ul>
-                        <li v-for="(link, index) in link" :key="index"> 
-                            <a :href="link.url" class="mx-3">{{link.text}}</a>
-                            <!-- <ul>
-                                <li v-for="(page, index) in pages" :key="index" >
+                        <li v-for="(link, index) in link" :key="index" class="px-4"> 
+                            <a :href="link.url">{{link.text}}</a>
+                            <ul class="dropdown">
+                                <li class="pippo" v-for="(page, index) in pages" :key="index" >
                                     <a :href="page.url">{{page.text}}</a>
                                 </li>
-                            </ul> -->
+                                                           
+                            </ul>
                         </li>
+
+
                     </ul>
 
                     <div class="icon mx-3">
@@ -32,7 +35,7 @@
                 <!-- end link -->
                 
                 <!-- start input -->
-                <div class="col-3 d-inline-flex">
+                <div class="col-2 d-inline-flex">
 
                     <input type="text" 
                         class="form-control" 
@@ -120,6 +123,7 @@ export default {
 <style scoped lang="scss">
     header{
         nav{
+            // position: relative;
             .container-lg{
                 .row{
                     .col-2{
@@ -128,22 +132,30 @@ export default {
                             height: 35px;
                         }
                     }
-                    .col-7{
+                    .col-8{
                         ul{
                             li{
                                 display: inline-block;
                                 list-style: none;
-                                font-size: 20px;
-                                    // ul{
-                                    //     li{
-                                    //         display: block;
-                                    //         display: none;
-                                    //             li:hover{
-                                    //             display: block;
-                                    //             }
+                                font-size: 14px;
+                                    ul{
+                                        li{
+                                            display: block;
+                                            display: none;               
+                                                // &:hover{
+                                                //     display: block;
+                                                // }
+                                            // a{
+                                            //    color: transparent;
+                                            //     li:hover a{
+                                            //        color: black;
+                                            //     }
+                                            // }
+
+
                                             
-                                    //     }
-                                    // }
+                                        }
+                                    }
                             }
                         }
                         .icon{
@@ -152,7 +164,7 @@ export default {
                             }
                         }
                     }
-                    .col-3{
+                    .col-2{
                         button{
                             .lente:hover{
                                 color: #20AD96;
