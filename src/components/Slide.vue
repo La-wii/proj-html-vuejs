@@ -114,7 +114,7 @@ export default {
             .row{
                 .col-4{
                     .card{
-                        height: 300px;
+                        height: 400px;
                         border: none;
                         .card-body{
                             .card-img{
