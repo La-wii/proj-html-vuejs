@@ -7,40 +7,29 @@
             <!-- start row -->
             <div class="row py-2">
                 <!-- start logo -->
-                <div class="col-2 pt-3">
+                <div class="col-1 pt-3">
                     <img src="/img/dark-logo.png" alt="logo" class="logo">
                 </div>
                 <!-- end logo -->
 
                 <!-- start link -->
-                <div class="col-8 pt-4 d-inline-flex">
+                <div class="col-9 pt-4 d-inline-flex">
                     <ul>
                         <li v-for="(link, index) in link" :key="index" class="px-4"> 
                             <a :href="link.url">{{link.text}}</a>
                             
-                            <!-- <ul>
-                                <li v-for="(page, index) in pages" :key="index" >
-                                    <a :href="page.url">{{page.text}}</a>
+                            <ul v-if="link.subitems"> 
+                                <li v-for="(page, index) in link.subitems" :key="index" >
+                                    <a class="pippo" :href="page.url">{{page.text}}</a>
                                 </li>
+                            </ul>                            
+                                
                                                            
-                            </ul> -->
-
-                            <!-- <ul>
-                                <li><a href="#"></a>a</li>
-                                <li><a href="#"></a>b</li>
-                                <li><a href="#"></a>c</li> 
-                            </ul> -->
                         </li>
 
 
                     </ul>
 
-                    <!-- <ul>
-                        <li v-for="(page, index) in pages" :key="index" >
-                            <a :href="page.url">{{page.text}}</a>
-                        </li>
-                                                           
-                    </ul> -->
 
                     <div class="icon mx-3">
                         <i class="far fa-user-circle"></i>
@@ -49,7 +38,7 @@
                 <!-- end link -->
                 
                 <!-- start input -->
-                <div class="col-2 d-inline-flex">
+                <div class="col-2 d-inline-flex pt-3">
 
                     <input type="text" 
                         class="form-control" 
@@ -84,49 +73,140 @@ export default {
         {
           text: 'Home',
           url:'#',
-          current: false
-        },
+          current: false,
+            subitems:[
+            {
+            text: 'link',
+            url:'#',
+            current: false,
+          
+            },
+            {
+            text: 'link',
+            url:'#',
+            current: false
+            },
+            {
+            text: 'link',
+            url:'#',
+            current: false
+            }              
+            ]
+            },
         {
           text: 'Pages',
           url:'#',
-          current: false
+          current: false,
+            subitems:[
+            {
+            text: 'link',
+            url:'#',
+            current: false,
+          
+            },
+            {
+            text: 'link',
+            url:'#',
+            current: false
+            },
+            {
+            text: 'link',
+            url:'#',
+            current: false
+            }              
+            ]
         },
         {
           text: 'Courses',
           url:'#',
-          current: false
+          current: false,
+          subitems:[
+            {
+            text: 'link',
+            url:'#',
+            current: false,
+          
+            },
+            {
+            text: 'link',
+            url:'#',
+            current: false
+            },
+            {
+            text: 'link',
+            url:'#',
+            current: false
+            }              
+            ]
         },
         {
           text: 'Features',
           url:'#',
-          current: false
+          current: false,
+          subitems:[
+            {
+            text: 'link',
+            url:'#',
+            current: false,
+          
+            },
+            {
+            text: 'link',
+            url:'#',
+            current: false
+            },
+            {
+            text: 'link',
+            url:'#',
+            current: false
+            }              
+            ]
         },
         {
           text: 'Blog',
           url:'#',
-          current: false
+          current: false,
+          subitems:[
+            {
+            text: 'link',
+            url:'#',
+            current: false,
+          
+            },
+            {
+            text: 'link',
+            url:'#',
+            current: false
+            },
+            {
+            text: 'link',
+            url:'#',
+            current: false
+            }              
+            ]
         },
         {
           text: 'Shop',
           url:'#',
-          current: false
-        }
-        ],
-        pages:[
-        {
-          text: 'link 1',
-          url:'#',
-          current: false
-        },
-        {
-          text: 'link 2',
-          url:'#',
-          current: false
-        },
-        {
-          text: 'link 3',
-          url:'#',
-          current: false
+          current: false,
+          subitems:[
+            {
+            text: 'link',
+            url:'#',
+            current: false,
+          
+            },
+            {
+            text: 'link',
+            url:'#',
+            current: false
+            },
+            {
+            text: 'link',
+            url:'#',
+            current: false
+            }              
+            ]
         }
         ]
     }
@@ -140,36 +220,34 @@ export default {
             // position: relative;
             .container-lg{
                 .row{
-                    .col-2{
+                    .col-1{
                         .logo{
-                            width: 150px;
-                            height: 35px;
+                            // width: 150px;
+                            height: 25px;
+                            object-fit: cover;
                         }
                     }
-                    .col-8{
+                    .col-9{
                         ul{
                             li{
                                 display: inline-block;
                                 list-style: none;
                                 font-size: 14px;
-                                    // ul{
-                                    //     li{
-                                    //         display: block;
-                                    //         display: none;               
-                                    //             &:hover{
-                                    //                 display: block;
-                                    //             }
-                                    //         a{
-                                    //            color: transparent;
-                                    //             li:hover a{
-                                    //                color: black;
-                                    //             }
-                                    //         }
-
-
-                                            
-                                    //     }
-                                    // }
+                                position: relative;
+                                    &:hover .pippo{
+                                            color: black;
+                                            display: block;
+                                    }
+                                    ul{
+                                        li{
+                                            .pippo{
+                                                color: transparent;
+                                                &:hover{
+                                                    color: #20AD96;
+                                                }
+                                            }                                           
+                                        }
+                                    }
                             }
                         }
                         .icon{
@@ -179,8 +257,17 @@ export default {
                         }
                     }
                     .col-2{
+                        height: 60px;
+                        input{
+                            background-color: #efefef;
+                            border: none;
+                            margin-right: -10px;
+                        }
                         button{
-                            .lente:hover{
+                            border: none;
+                            width: 50px;
+                            // margin-left: 0px;
+                            .lente{
                                 color: #20AD96;
                             }
                         }
