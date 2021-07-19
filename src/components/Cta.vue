@@ -12,7 +12,7 @@
                 <!-- start col -->
                 <div class="col-8 text-center position-relative">
                     <h4 class="py-3">Start today for getting <span>Online Certification</span></h4>
-                    <h2 class="pb-5">You can be your own guiding star with our help!</h2>
+                    <h2 class="pb-5 display-6">You can be your own guiding star with our help!</h2>
                     <button class="btn-green">
                         Get started now
                     </button>
