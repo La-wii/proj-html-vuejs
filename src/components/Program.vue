@@ -26,7 +26,7 @@
                 <div class="card" style="width: 22rem;">
                     <img src="/img/custom.png" class="card-img-top pb-4" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Customize Preferences</h5>
+                        <h5 class="card-title h4 pt-3">Customize Preferences</h5>
                         <p class="card-text">Learners are given the right to arrange and customize their study schedule and timetable based on preferences.</p>
                         <a href="#">
                             Start here
@@ -38,7 +38,7 @@
                 <div class="card" style="width: 22rem;">
                     <img src="/img/cloud-storage.png" class="card-img-top pb-4" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Cloud Storage</h5>
+                        <h5 class="card-title h4 pt-3">Cloud Storage</h5>
                         <p class="card-text">You can store online lessons via online cloud or download to your device and revise lessons on the way.
                         </p>
                         <a href="#">
@@ -53,7 +53,7 @@
 
                     <img src="/img/multimedia.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Multimedia Channels</h5>
+                        <h5 class="card-title h4">Multimedia Channels</h5>
                         <p class="card-text">We provide study materials with various formats: video, audio, slides, doc, prints, books and applications.</p>
                         <a href="#">
                             Start now
