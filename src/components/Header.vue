@@ -17,16 +17,30 @@
                     <ul>
                         <li v-for="(link, index) in link" :key="index" class="px-4"> 
                             <a :href="link.url">{{link.text}}</a>
-                            <ul class="dropdown">
-                                <li class="pippo" v-for="(page, index) in pages" :key="index" >
+                            
+                            <!-- <ul>
+                                <li v-for="(page, index) in pages" :key="index" >
                                     <a :href="page.url">{{page.text}}</a>
                                 </li>
                                                            
-                            </ul>
+                            </ul> -->
+
+                            <!-- <ul>
+                                <li><a href="#"></a>a</li>
+                                <li><a href="#"></a>b</li>
+                                <li><a href="#"></a>c</li> 
+                            </ul> -->
                         </li>
 
 
                     </ul>
+
+                    <!-- <ul>
+                        <li v-for="(page, index) in pages" :key="index" >
+                            <a :href="page.url">{{page.text}}</a>
+                        </li>
+                                                           
+                    </ul> -->
 
                     <div class="icon mx-3">
                         <i class="far fa-user-circle"></i>
@@ -138,24 +152,24 @@ export default {
                                 display: inline-block;
                                 list-style: none;
                                 font-size: 14px;
-                                    ul{
-                                        li{
-                                            display: block;
-                                            display: none;               
-                                                // &:hover{
-                                                //     display: block;
-                                                // }
-                                            // a{
-                                            //    color: transparent;
-                                            //     li:hover a{
-                                            //        color: black;
-                                            //     }
-                                            // }
+                                    // ul{
+                                    //     li{
+                                    //         display: block;
+                                    //         display: none;               
+                                    //             &:hover{
+                                    //                 display: block;
+                                    //             }
+                                    //         a{
+                                    //            color: transparent;
+                                    //             li:hover a{
+                                    //                color: black;
+                                    //             }
+                                    //         }
 
 
                                             
-                                        }
-                                    }
+                                    //     }
+                                    // }
                             }
                         }
                         .icon{
