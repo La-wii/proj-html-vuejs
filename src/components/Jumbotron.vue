@@ -77,6 +77,8 @@ export default {
 
 <style scoped lang="scss">
     .jumbotron{
+        background-color: #efefef;
+        margin-top: -50px;
         .container-lg{
             // start row
             .row{
