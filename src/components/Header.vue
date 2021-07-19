@@ -15,14 +15,14 @@
                 <!-- start link -->
                 <div class="col-9 pt-4 d-inline-flex">
                     <ul>
-                        <li v-for="(link, index) in link" :key="index" class="px-4"> 
+                        <li v-for="(link, index) in link" :key="index"> 
                             <a :href="link.url">{{link.text}}</a>
                             <div class="col-2">
-                            <ul v-if="link.subitems"> 
-                                <li v-for="(page, index) in link.subitems" :key="index" >
-                                    <a class="pippo" :href="page.url">{{page.text}}</a>
-                                </li>
-                            </ul>                            
+                                <ul v-if="link.subitems"> 
+                                    <li v-for="(page, index) in link.subitems" :key="index" >
+                                        <a class="pippo" :href="page.url">{{page.text}}</a>
+                                    </li>
+                                </ul>                            
                             </div>    
                                                            
                         </li>
@@ -31,7 +31,7 @@
                     </ul>
 
 
-                    <div class="icon mx-3">
+                    <div class="icon">
                         <i class="far fa-user-circle"></i>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                     >
 
                     <button type="submit" 
-                    class="ms-2 px-2"
+                    class="ms-2"
                     >
                         <i class="fas fa-search lente"></i>
                     </button>               
@@ -76,18 +76,18 @@ export default {
           current: false,
             subitems:[
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false,
           
             },
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false
             },
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false
             }              
@@ -99,41 +99,41 @@ export default {
           current: false,
             subitems:[
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false,
           
             },
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false
             },
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false
             }              
             ]
         },
         {
-          text: 'Courses',
+          text: 'Link',
           url:'#',
           current: false,
           subitems:[
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false,
           
             },
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false
             },
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false
             }              
@@ -145,18 +145,18 @@ export default {
           current: false,
           subitems:[
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false,
           
             },
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false
             },
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false
             }              
@@ -168,18 +168,18 @@ export default {
           current: false,
           subitems:[
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false,
           
             },
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false
             },
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false
             }              
@@ -191,18 +191,18 @@ export default {
           current: false,
           subitems:[
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false,
           
             },
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false
             },
             {
-            text: 'link',
+            text: 'Link',
             url:'#',
             current: false
             }              
@@ -228,17 +228,19 @@ export default {
                         }
                     }
                     .col-9{
+                        // margin-left: 30px;
                         ul{
+                            margin-left: 30px;
                             li{
                                 display: inline-block;
                                 list-style: none;
                                 font-size: 14px;
-                                position: relative;
                                     &:hover .pippo{
                                             color: black;
                                             display: block;
                                     }
                                     ul{
+                                        
                                         li{
                                             .pippo{
                                                 color: transparent;
