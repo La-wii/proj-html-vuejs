@@ -17,17 +17,16 @@
                     <ul>
                         <li v-for="(link, index) in link" :key="index"> 
                             <a :href="link.url">{{link.text}}</a>
-                            <div class="col-2">
+                            <div class="col-3">
                                 <ul v-if="link.subitems"> 
                                     <li v-for="(page, index) in link.subitems" :key="index" >
-                                        <a class="pippo" :href="page.url">{{page.text}}</a>
+                                        <a class="dropdown" :href="page.url">
+                                            {{page.text}}
+                                        </a>
                                     </li>
                                 </ul>                            
                             </div>    
-                                                           
                         </li>
-
-
                     </ul>
 
 
@@ -78,8 +77,7 @@ export default {
             {
             text: 'Link',
             url:'#',
-            current: false,
-          
+            current: false,          
             },
             {
             text: 'Link',
@@ -92,7 +90,7 @@ export default {
             current: false
             }              
             ]
-            },
+        },
         {
           text: 'Pages',
           url:'#',
@@ -102,7 +100,6 @@ export default {
             text: 'Link',
             url:'#',
             current: false,
-          
             },
             {
             text: 'Link',
@@ -228,22 +225,25 @@ export default {
                         }
                     }
                     .col-9{
-                        // margin-left: 30px;
                         ul{
                             margin-left: 30px;
                             li{
                                 display: inline-block;
                                 list-style: none;
                                 font-size: 14px;
-                                    &:hover .pippo{
+                                    &:hover .dropdown{
                                             color: black;
-                                            display: block;
+                                            // display: block;
+                                            
                                     }
                                     ul{
                                         
                                         li{
-                                            .pippo{
+                                            .dropdown{
                                                 color: transparent;
+                                                // padding-left: -20px;
+                                                // margin-right: -30px;
+                                                
                                                 &:hover{
                                                     color: #20AD96;
                                                 }
