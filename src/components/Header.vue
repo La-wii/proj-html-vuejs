@@ -7,17 +7,17 @@
             <!-- start row -->
             <div class="row py-2">
                 <!-- start logo -->
-                <div class="col-1 pt-3">
+                <div class="col-2 pt-3">
                     <img src="/img/dark-logo.png" alt="logo" class="logo">
                 </div>
                 <!-- end logo -->
 
                 <!-- start link -->
-                <div class="col-9 pt-4 d-inline-flex">
+                <div class="col-8 pt-4 d-inline-flex">
                     <ul>
                         <li v-for="(link, index) in link" :key="index"> 
                             <a :href="link.url">{{link.text}}</a>
-                            <div class="col-3">
+                            <div class="col-2">
                                 <ul v-if="link.subitems"> 
                                     <li v-for="(page, index) in link.subitems" :key="index" >
                                         <a class="dropdown" :href="page.url">
@@ -217,35 +217,34 @@ export default {
             // position: relative;
             .container-lg{
                 .row{
-                    .col-1{
+                    .col-2{
                         .logo{
-                            // width: 150px;
-                            height: 25px;
+                            height: 30px;
                             object-fit: cover;
                         }
                     }
-                    .col-9{
+                    .col-8{
                         ul{
                             margin-left: 30px;
                             li{
                                 display: inline-block;
                                 list-style: none;
-                                font-size: 14px;
+                                font-size: 14px;    
                                     &:hover .dropdown{
                                             color: black;
-                                            // display: block;
-                                            
+                                           
                                     }
                                     ul{
-                                        
+                                        padding: 0;
                                         li{
                                             .dropdown{
+                                                
                                                 color: transparent;
                                                 // padding-left: -20px;
                                                 // margin-right: -30px;
-                                                
                                                 &:hover{
                                                     color: #20AD96;
+                                                    
                                                 }
                                             }                                           
                                         }
