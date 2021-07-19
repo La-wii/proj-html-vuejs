@@ -22,7 +22,7 @@
             <div class="row g-0">
 
               <div class="col-md-4 pt-2">
-                <img :src="corso.img" class="img-fluid rounded-circle" alt="immagini">
+                <img :src="corso.img" class="img-fluid card-img" alt="immagini">
               </div>
 
               <div class="col-md-8">
@@ -139,15 +139,20 @@ export default {
         }
         .row{
           .card{
-            height: 200px;
+            height: 180px;
             width: calc(100% / 2);
             // margin: 10px;
             background-color: transparent;
             border: none;
+              &:hover{
+                background-color: white;
+              }
               .card-img{
-                height: 150px;
-                width: 150px;
+                height: 160px;
+                width: 160px;
                 // border-radius: 50%;
+                border-radius: 50%;
+                margin-left: 20px;
               }
               .green-text{
                 color:#20AD96;
@@ -155,8 +160,7 @@ export default {
             }
         }
       }
-  }
-    
+  }  
 
     
 </style>
