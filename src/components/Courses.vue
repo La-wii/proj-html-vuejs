@@ -51,7 +51,7 @@
       </div>
 
       <div class="row">
-        <div class="col-12 text-center">
+        <div class="col-12 text-center pt-3">
           <button class="btn-green">
             View all courses 
             <i class="fas fa-arrow-right"></i>
