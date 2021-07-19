@@ -17,13 +17,13 @@
                     <ul>
                         <li v-for="(link, index) in link" :key="index" class="px-4"> 
                             <a :href="link.url">{{link.text}}</a>
-                            
+                            <div class="col-2">
                             <ul v-if="link.subitems"> 
                                 <li v-for="(page, index) in link.subitems" :key="index" >
                                     <a class="pippo" :href="page.url">{{page.text}}</a>
                                 </li>
                             </ul>                            
-                                
+                            </div>    
                                                            
                         </li>
 
