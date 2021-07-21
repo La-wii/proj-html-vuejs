@@ -232,18 +232,16 @@ export default {
                                 font-size: 14px;    
                                     &:hover .dropdown{
                                             color: black;
-                                           
+                                            background-color: white;
                                     }
                                     ul{
                                         padding: 0;
                                         li{
                                             .dropdown{
-                                                
                                                 color: transparent;
-                                                // padding-left: -20px;
-                                                // margin-right: -30px;
                                                 &:hover{
                                                     color: #20AD96;
+                                                    background-color: white;
                                                     
                                                 }
                                             }                                           
