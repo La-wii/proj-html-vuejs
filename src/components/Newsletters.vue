@@ -80,13 +80,14 @@ export default {
                     bottom: 0;
                 }
                 h2{
+                    color: #48495f;
                     span{
                         color: #20AD96;
                     }
                 }
                 p{
                     font-size: 25px;
-                    color: #2c3837;
+                    color: #48495f;
                 }
             }
 

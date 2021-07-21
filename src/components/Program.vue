@@ -13,9 +13,7 @@
 
                 <div class="top text-center py-3">
                     <p class="text-uppercase">
-                        <strong>
-                            max coach available
-                        </strong>
+                        max coach available                        
                     </p>
                     <h2 class="text-capitalize display-6">access 
                         <span class="text-capitalize">smart tutoring</span> 
@@ -86,9 +84,11 @@ export default {
             .col-12{
                 .top{
                     p{
-                        font-size: 20px;
+                        color: #9ea4a5;
+                        font-size: 18px;
                     }
                     h2{
+                        color: #48495f;
                         span{
                             color: #20AD96;
                         }
@@ -98,6 +98,9 @@ export default {
                     width: calc(100% / 3);
                     border: none;
                     margin: 35px;
+                    h5{
+                        color: #48495f;
+                    }
                     p{
                         color: #9ea4a5;
                     }

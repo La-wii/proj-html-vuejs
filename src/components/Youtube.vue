@@ -33,13 +33,14 @@
                     <div class="content p-5">
                         <p class="text-uppercase">
                         get started
-                            <strong>
-                                effortlessly
-                            </strong>
+                            <span>
+                                <strong>effortlessly</strong>
+                            </span>
                         </p>
 
                         <h2 class="text-capitalize display-6 py-2">
                             enjoy our
+                            <br>
                             <span class="text-capitalize">companionship</span> 
                         </h2>
 
@@ -101,10 +102,16 @@ export default {
                 }
 
                 .col-6{
-                    p{
+                    p{  
+                        color: #aeadae;
                         font-size: 20px;
+                        span{
+                            color: #48495f;
+                        }
                     }
                     h2{
+                        color: #48495f;
+                        font-weight: bold;
                         span{
                             color: #20AD96;
                         }

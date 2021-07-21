@@ -48,9 +48,13 @@ export default {
                     // }
                     .col-8{
                         h4{
+                            color: #48495f;
                             span{
                                 color: #20AD96;
                             }
+                        }
+                        h2{
+                            color: #48495f;
                         }
                         .cerchio{
                             width: 100px;

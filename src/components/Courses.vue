@@ -135,6 +135,9 @@ export default {
             p{
               color: #9ea4a5;
             }
+            h2{
+              color: #48495f;
+            }
           }
         }
         .row{
@@ -144,6 +147,7 @@ export default {
             // margin: 10px;
             background-color: transparent;
             border: none;
+            color: #48495f;
               &:hover{
                 background-color: white;
               }

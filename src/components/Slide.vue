@@ -109,6 +109,9 @@ export default {
                     span{
                         color:#20AD96;
                     }
+                    h2{
+                        color: #48495f;
+                    }
                 }
             }
             .row{

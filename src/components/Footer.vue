@@ -132,7 +132,11 @@ export default {
         .container-lg{
             .row{
                 .col-6{
+                    h3{
+                        font-size: 22px;
+                    }
                     .social{
+                        
                         a{
                             color: #9ea4a5;
                             font-size: 25px;
@@ -146,6 +150,7 @@ export default {
                 }
                 .col-3{
                     h4{
+                        font-size: 22px;
                         margin-left: 30px;
                     }
                     ul{
